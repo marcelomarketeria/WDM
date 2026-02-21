@@ -1,0 +1,73 @@
+
+/* 
+  WORLD DISCOUNT MERCHANDISE - MASTER CSS 
+  Copy this into Elementor > Site Settings > Custom CSS
+*/
+
+:root {
+  --wdm-primary: #0056D2;
+  --wdm-orange: #FF5733;
+  --wdm-gray: #C4C9D0;
+  --wdm-slate-900: #0F172A;
+  --wdm-slate-950: #020617;
+}
+
+/* Efecto de Vidrio para el Header */
+.wdm-header-glass {
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+}
+
+/* El Logo WDM con CSS Puro */
+.wdm-logo-stripes {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 45px;
+  transform: skewX(-12deg);
+}
+.stripe-blue { height: 8px; background: var(--wdm-primary); width: 100%; }
+.stripe-white { height: 8px; background: #FFFFFF; width: 85%; }
+.stripe-red { height: 8px; background: #A62C23; width: 70%; }
+
+/* Degradado del Saturday Sale */
+.wdm-sale-gradient {
+  background: linear-gradient(135deg, #FF5733 0%, #0056D2 100%) !important;
+}
+
+/* Tarjeta de Ahorros Directos */
+.wdm-savings-card {
+  box-shadow: 0 25px 50px -12px rgba(0, 86, 210, 0.25) !important;
+}
+
+/* Tipografía Itálica Extra Black */
+.wdm-heading-italic {
+  font-style: italic !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.02em !important;
+  text-transform: uppercase !important;
+}
+
+/* Animación de Pulso para Ventas */
+.wdm-pulse {
+  animation: wdm-pulse-animation 2s infinite;
+}
+
+@keyframes wdm-pulse-animation {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+/* Estilo de Botón WDM */
+.wdm-button {
+  text-transform: uppercase !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.1em !important;
+  border-radius: 0px !important; /* Estética industrial */
+  transition: all 0.3s ease !important;
+}
+.wdm-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 87, 51, 0.2);
+}
